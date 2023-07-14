@@ -12,22 +12,24 @@
     <main>
         <section class="calculadora">
             <output id="result">0</output>
-            <input class="numeros" type="button" value="7" id="num7">
-            <input class="numeros" type="button" value="8" id="num8">
-            <input class="numeros" type="button" value="9" id="num9">
-            <input id="mult" type="button" value="*" onclick="mult()">
-            <input class="numeros" type="button" value="4" id="num4">
-            <input class="numeros" type="button" value="5" id="num5">
-            <input class="numeros" type="button" value="6" id="num6">
-            <input id="sub" type="button" value="-" onclick="sub()">
+            <input class="numeros" type="button" value="7" id="num7" onclick="result.innerHTML = Number(num7.value)">
+            <input class="numeros" type="button" value="8" id="num8"onclick="result.innerHTML = Number(num8.value)">
+            <input class="numeros" type="button" value="9" id="num9"onclick="result.innerHTML = Number(num9.value)">
+            <input id="mult" type="button" value="*" onclick="result.innerHTML += Symbol(mult.value)">
+            <input class="numeros" type="button" value="4" id="num4" onclick="result.innerHTML = Number(num4.value)">
+            <input class="numeros" type="button" value="5" id="num5" onclick="result.innerHTML = Number(num5.value)">
+            <input class="numeros" type="button" value="6" id="num6" onclick="result.innerHTML = Number(num6.value)">
+            <input id="sub" type="button" value="-" onclick="result.innerHTML += Symbol(sub.value)">
             
-            <input class="numeros" type="button" value="1" id="num1">
-            <input class="numeros" type="button" value="2" id="num2">
-            <input class="numeros" type="button" value="3" id="num3">
-            <input id="soma" type="button" value="+" onclick="somar()">
-            <input type="button" value="0" id="num0">
+            <input class="numeros" type="button" value="1" id="num1" onclick="result.innerHTML = Number(num1.value)">
+            <input class="numeros" type="button" value="2" id="num2" onclick="result.innerHTML = Number(num2.value)">
+            <input class="numeros" type="button" value="3" id="num3" onclick="result.innerHTML = Number(num3.value)">
+            <input id="soma" type="button" value="+">
+            <input type="button" value="0" id="num0" onclick="result.innerHTML = Number(num0.value)">
         </section>
     </main>
+    <script>
 
+    </script>
 </body>
 </html>
