@@ -9,7 +9,6 @@ body{
 
 main{
     display: flex;
-
     width: 500px;
     height: 500px;
     flex-direction: column;
@@ -24,8 +23,10 @@ section.calculadora{
     background-color: aqua;
     border-radius: 15px;
     padding: 15px;
-    grid-template-columns: 55px 55px 55px;
-    grid-template-rows: 55px 55px 55px 55px;
+    grid-template-columns: 55px 55px 55px 55px;
+    grid-template-rows: 55px 55px 55px;
+    border: 2px outset;
+    border-color: buttonborder;
 }
 
 output{
@@ -33,8 +34,12 @@ output{
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 200px;
+    width: 100%;
     border-radius: 5px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 2px outset;
+    border-color: buttonborder;
 }
 
 #mult{
@@ -62,9 +67,12 @@ output{
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 50px;
+    height: 100%;
     background-color: rgb(255, 165, 56);
     border-radius: 5px;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
 }
 
 .numeros{
@@ -75,4 +83,16 @@ output{
     height: 50px;
     background-color: bisque;
     border-radius: 5px;
+}
+
+#num0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
