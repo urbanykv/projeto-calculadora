@@ -66,6 +66,7 @@ output{
     height: 50px;
     background-color: rgb(255, 165, 56);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .numeros{
