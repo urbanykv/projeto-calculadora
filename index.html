@@ -12,24 +12,24 @@
     <main>
         <section class="calculadora">
             <output id="result"></output>
-            <input class="numeros" type="button" value="7" id="num7" onclick="result.innerHTML += Number(num7.value)">
-            <input class="numeros" type="button" value="8" id="num8" onclick="result.innerHTML += Number(num8.value)">
-            <input class="numeros" type="button" value="9" id="num9" onclick="result.innerHTML += Number(num9.value)">
+            <input class="numeros" type="button" value="7" id="num7" onclick="result.innerHTML += String(num7.value)">
+            <input class="numeros" type="button" value="8" id="num8" onclick="result.innerHTML += String(num8.value)">
+            <input class="numeros" type="button" value="9" id="num9" onclick="result.innerHTML += String(num9.value)">
             <input id="mult" type="button" value="C" onclick="apagar()">
-            <input class="numeros" type="button" value="4" id="num4" onclick="result.innerHTML += Number(num4.value)">
-            <input class="numeros" type="button" value="5" id="num5" onclick="result.innerHTML += Number(num5.value)">
-            <input class="numeros" type="button" value="6" id="num6" onclick="result.innerHTML += Number(num6.value)">
-            <input id="sub" type="button" value="-" onclick="result.innerHTML += Symbol(sub.value)">
+            <input class="numeros" type="button" value="4" id="num4" onclick="result.innerHTML += String(num4.value)">
+            <input class="numeros" type="button" value="5" id="num5" onclick="result.innerHTML += String(num5.value)">
+            <input class="numeros" type="button" value="6" id="num6" onclick="result.innerHTML += String(num6.value)">
+            <input id="sub" type="button" value="-" onclick="result.innerHTML += String(sub.value)">
             
-            <input class="numeros" type="button" value="1" id="num1" onclick="result.innerHTML += Number(num1.value)">
-            <input class="numeros" type="button" value="2" id="num2" onclick="result.innerHTML += Number(num2.value)">
-            <input class="numeros" type="button" value="3" id="num3" onclick="result.innerHTML += Number(num3.value)">
-            <input id="soma" type="button" value="+">
-            <input type="button" value="0" id="num0" onclick="somar()">
+            <input class="numeros" type="button" value="1" id="num1" onclick="result.innerHTML += String(num1.value)">
+            <input class="numeros" type="button" value="2" id="num2" onclick="result.innerHTML += String(num2.value)">
+            <input class="numeros" type="button" value="3" id="num3" onclick="result.innerHTML += String(num3.value)">
+            <input id="soma" type="button" value="+"
+            onclick="result.innerHTML += String(soma.value)">
+            <input type="button" value="0" id="num0"  onclick="result.innerHTML += String(num0.value)">
+            <input type="button" value="=" id="igual"  onclick="operacao()">
         </section>
     </main>
-    <script>
-
-    </script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
